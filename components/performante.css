@@ -1,0 +1,113 @@
+.bg_img {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.img_header {
+  height: 100vh;
+}
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.about_performance {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 6.4rem;
+  padding: 6.4rem 4.8rem;
+}
+.about {
+  background-color: #52525b;
+  color: var(--text-white-light);
+  padding: 4.2rem;
+}
+.footer {
+  padding: 2rem;
+  background-color: #1e3a8a;
+}
+.social {
+  background-color: #1e3a8a;
+}
+.info_btn {
+  background-color: #25459c;
+}
+@media screen and (max-width: 1100px) {
+  .about_performance {
+    gap: 4.8rem;
+    padding: 4.8rem 3.2rem;
+  }
+  .about {
+    padding: 2.4rem;
+  }
+  .footer {
+    display: none;
+  }
+  .social {
+    padding: 2.4rem;
+  }
+}
+.bgTopMargin {
+  margin-top: 50rem;
+}
+
+@media screen and (max-width: 850px) {
+  .about_performance {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 580px) {
+  .about_performance {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -5rem;
+  }
+  .bg_img {
+    width: 40rem;
+    height: 25rem;
+  }
+  .img_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .about_performance {
+    margin-top: -25rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about_performance {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -10rem;
+  }
+  .bg_img {
+    width: 30rem;
+    height: 20rem;
+  }
+  .img_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.4rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .about_performance {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -15rem;
+  }
+  .bg_img {
+    width: 20rem;
+    height: 10rem;
+  }
+  .img_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+  }
+}

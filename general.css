@@ -1,0 +1,238 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--text-black);
+  background-color: #d9d9d9;
+}
+.social {
+  background-color: var(--background-red);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4.8rem 1rem;
+}
+.footer_svg {
+  height: 2.4rem;
+  width: 2.4rem;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+}
+.social_icon-box {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: center;
+}
+.social_text {
+  color: var(--text-white-darker);
+  font-size: 1.7rem;
+}
+.social_icon-box {
+  fill: aqua;
+}
+.footer {
+  background-color: var(--background-red);
+  padding: 2.4rem;
+  display: flex;
+  justify-content: space-around;
+}
+.info_input {
+  border: none;
+  background-color: transparent;
+  color: var(--text-white);
+  border-bottom: 1px solid var(--text-white-darker); /* Add an underline */
+  margin-bottom: 5px; /* Add a margin bottom of 5px */
+  padding-bottom: 10px; /* Optional: Add padding-bottom for better visual appearance */
+}
+
+.info_input::placeholder {
+  color: var(--text-white-darker);
+}
+.info > h2 {
+  color: var(--text-white);
+  margin-bottom: 1.4rem;
+}
+.info_btn {
+  padding: 1.6rem 4.8rem;
+  background-color: #7f1d1d;
+  cursor: pointer;
+  color: var(--text-white);
+  border: none;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+.info-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.4rem;
+}
+.info-2 > a {
+  font-weight: 300;
+  color: var(--text-white-darker);
+  text-decoration: none;
+}
+.info-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.info-3 > p {
+  color: var(--text-white-darker);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem 3rem;
+  background-color: #fdf4ff;
+  position: relative;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar_logo-a {
+  text-decoration: none;
+  font-size: 2.8rem;
+  color: var(--text-black);
+}
+.navbar-star {
+  filter: invert(1) hue-rotate(180deg); /* Change the hue-rotate value for different colors */
+  height: 2rem;
+}
+.navbar_logo-name {
+  font-size: 2.4rem;
+}
+.navbar-elements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+.element {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--text-black);
+}
+.navbar_img {
+  width: 100%;
+  filter: brightness(0.5);
+}
+.img_bg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg_text {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  color: var(--text-white);
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); /* Optional: add a text shadow */
+}
+.img_bg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar_img {
+  width: 100%;
+  filter: brightness(0.5);
+}
+.element {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--text-black);
+}
+.bg_img {
+  width: 100%;
+}
+.btn-mobile {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .navbar-elements {
+    display: none; /* Hide the navbar elements */
+  }
+  .btn-mobile {
+    display: inline-block; /* Show the mobile button */
+    padding: 1rem;
+    border: none;
+  }
+  .navbar_mobile {
+    position: absolute;
+    top: 150%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer {
+    display: none;
+  }
+  .social {
+    padding: 2.4rem;
+  }
+  .bg_text {
+    top: 15%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer_svg {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+  .social_text {
+    font-size: 1.5rem;
+  }
+  .bg_text {
+    font-size: 2.4rem;
+  }
+  .bg_btn {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .social {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .bg_text {
+    font-size: 2rem;
+    top: 10%;
+  }
+  .bg_btn {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    top: 50%;
+  }
+  .navbar_logo-a {
+    font-size: 2rem;
+  }
+  .navbar-star {
+    height: 1.4rem;
+  }
+}

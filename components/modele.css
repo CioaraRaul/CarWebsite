@@ -1,0 +1,150 @@
+.element {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--text-black);
+}
+.bg_img {
+  width: 100%;
+}
+
+.car {
+  width: 23rem;
+  height: 16rem;
+  position: relative;
+}
+
+.car_img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: brightness(0.5);
+}
+
+.centered-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.car_arrow {
+  width: 2rem; /* Adjust the size as needed */
+  height: 2rem; /* Adjust the size as needed */
+  filter: brightness(100%);
+  background-color: transparent;
+}
+.cars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+  padding: 6.2rem 3.2rem;
+}
+.list-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list_model {
+  padding: 2.4rem 4.8rem;
+  background-color: #e4e4e7;
+  border: none;
+  color: var(--text-black);
+  font-size: 2rem;
+}
+.discover_text {
+  margin-top: -5rem;
+  text-align: center;
+}
+.discover_text > span {
+  font-weight: 600;
+}
+.discover_header {
+  margin-top: 2rem;
+  text-align: center;
+}
+.discover_cars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+  margin-bottom: 20rem;
+}
+.discover_car {
+  margin-top: 4.8rem;
+  width: 23rem;
+  height: 32rem;
+}
+.discover_car-img {
+  height: 16rem;
+  width: 100%;
+}
+
+.dicover_detail > h2 {
+  padding: 1rem 0;
+}
+.dicover_detail > p:not(:first-child) {
+  padding: 0.3rem 0;
+}
+.discover_light {
+  color: #64748b;
+}
+.discover-box {
+  height: 10rem;
+}
+.dicover_detail > button {
+  margin-top: 2rem;
+  border: none;
+  padding: 1.4rem 2.4rem;
+  background-color: var(--background-red);
+  color: var(--text-white);
+  cursor: pointer;
+}
+.large-discover {
+  height: 15rem;
+}
+.car_km {
+  height: 13rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .footer {
+    display: none;
+  }
+  .social {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cars {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .discover_cars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 2.4rem;
+  }
+  .discover_car {
+    margin-top: 15rem;
+  }
+  .list_model {
+    margin-bottom: -5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .cars {
+    padding: 1.4rem 1rem;
+  }
+  .car_img {
+    padding: 2.4rem;
+  }
+  .discover_car {
+    width: 20rem;
+    height: 30rem;
+  }
+}
